@@ -21,7 +21,6 @@ public class consumer {
             System.out.println(numero1  +numero2);
 
         };
-
         suma.accept(360,450);
     }
 }
