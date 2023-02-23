@@ -2,6 +2,7 @@ package org.ignacio.rios.lambda;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 public class consumer {
@@ -14,5 +15,13 @@ public class consumer {
 
 
         consumidor.accept(new Date());
+
+
+        BiConsumer<Integer,Integer> suma = (numero1, numero2)->{
+            System.out.println(numero1  +numero2);
+
+        };
+
+        suma.accept(360,450);
     }
 }
